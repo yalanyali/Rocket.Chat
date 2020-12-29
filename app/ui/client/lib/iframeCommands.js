@@ -21,7 +21,7 @@ const commands = {
 			return ret;
 		}, {});
 
-		FlowRouter.go(newUrl.pathname, null, { ...FlowRouter.current().queryParams, ...newParams });
+		FlowRouter.go(data.path, null, { ...FlowRouter.current().queryParams, ...newParams });
 	},
 
 	'set-user-status'(data) {
